@@ -54,9 +54,9 @@ if [ "$color_prompt" = yes ]; then
 	TEXT_RED="\[\033[0;31m\]"
 	TEXT_NORMAL="\[\033[0m\]"
 	TEXT_WHITE="\[\033[1;37m\]"
-	export PS1="$TEXT_RED\u@\h$TEXT_NORMAL:$TEXT_WHITE\w$TEXT_NORMAL$"
+	export PS1="$TEXT_RED\u@\h$TEXT_NORMAL:$TEXT_WHITE\w$TEXT_NORMAL$ "
 else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    PS1='\u@\h:\w\$ '
 fi
 unset color_prompt force_color_prompt
 
